@@ -1,4 +1,4 @@
-const argv = require("yargs").argv
+const argv = require("./config/yargs").argv
 let command = argv._[0]
 
 switch (command) {
