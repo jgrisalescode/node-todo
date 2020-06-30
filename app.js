@@ -22,7 +22,7 @@ switch (command) {
     console.log(updated)
     break
 
-  case "delete":
+  case "remove":
     let deleted = todo.remove(argv.description)
     console.log(deleted)
     break

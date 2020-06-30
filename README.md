@@ -13,8 +13,28 @@ npm install
 
 ## Usage
 
+List todo
+
 ```bash
-node app
+node app list
+```
+
+Creating a task
+
+```bash
+node app create -d "Walk the dog"
+```
+
+Updating a task
+
+```bash
+node app update -d "Walk the dog" -c true
+```
+
+Removing a task
+
+```bash
+node app remove -d "Walk the dog"
 ```
 
 ## Contributing
