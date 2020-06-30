@@ -19,6 +19,11 @@ const loadData = () => {
   }
 }
 
+const getList = () => {
+  loadData()
+  return todoList
+}
+
 const create = description => {
   loadData()
   let todo = {
@@ -31,5 +36,6 @@ const create = description => {
 }
 
 module.exports = {
-  create
+  create,
+  getList
 }
