@@ -5,7 +5,7 @@ Todo is a JavaScript APP in Node.js for register your todo lists.
 ## Installation
 
 Make sure that you have Node.js and NPM in your system
-Download the repository and then in the directory where you saved the project execute
+download the repository and then in the directory where you saved the project execute
 
 ```bash
 npm install
