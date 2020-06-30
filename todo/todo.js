@@ -35,7 +35,23 @@ const create = description => {
   return todoList
 }
 
+const update = (description, completed = true) => {
+  loadData()
+  // Find a match in JSON File
+  let index = todoList.findIndex(task => {
+    return task.description === description
+  })
+  if (index => 0) {
+    todoList[index].completed = completed
+    save()
+    return true
+  } else {
+    return false
+  }
+}
+
 module.exports = {
   create,
-  getList
+  getList,
+  update
 }

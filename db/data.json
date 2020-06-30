@@ -1,1 +1,1 @@
-[{"description":"Go out","completed":false},{"description":"Eat","completed":false},{"description":"Walk the dog","completed":false}]
+[{"description":"Go out","completed":false},{"description":"Eat","completed":"true"},{"description":"Walk the dog","completed":"true"}]

@@ -18,7 +18,8 @@ switch (command) {
     })
     break
   case "update":
-    console.log("TODO")
+    let updated = todo.update(argv.description, argv.completed)
+    console.log(updated)
     break
 
   default:
