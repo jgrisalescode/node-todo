@@ -11,7 +11,16 @@ const save = () => {
   })
 }
 
+const loadData = () => {
+  try {
+    todoList = require("../db/data.json")
+  } catch (error) {
+    todoList = []
+  }
+}
+
 const create = description => {
+  loadData()
   let todo = {
     description: description,
     completed: false
