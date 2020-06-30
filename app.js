@@ -22,6 +22,11 @@ switch (command) {
     console.log(updated)
     break
 
+  case "delete":
+    let deleted = todo.remove(argv.description)
+    console.log(deleted)
+    break
+
   default:
     console.log("Command not found")
     break

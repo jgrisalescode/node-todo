@@ -18,6 +18,13 @@ const argv = require("yargs")
       description: "Mark as completed or pending the task"
     }
   })
+  .command("remove", "Remove a thast the satate o f task", {
+    description: {
+      demand: true,
+      alias: "d",
+      description: "Description of the task to do"
+    }
+  })
   .help().argv
 
 module.exports = {

@@ -50,8 +50,23 @@ const update = (description, completed = true) => {
   }
 }
 
+const remove = description => {
+  loadData()
+  let index = todoList.findIndex(task => {
+    return task.description === description
+  })
+  if (index => 0) {
+    todoList.splice(index - 1, 1)
+    save()
+    return true
+  } else {
+    return false
+  }
+}
+
 module.exports = {
   create,
   getList,
-  update
+  update,
+  remove
 }
